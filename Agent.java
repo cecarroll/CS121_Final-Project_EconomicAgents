@@ -4,15 +4,17 @@ import java.util.*;
 public class Agent implements HasMenu{
     public double valuation;
     public double bid; 
-
+    public boolean keepGoing = true;
+    public double profit = 0.0; 
+    public boolean adjusted; 
 
     public Agent(){
         this.valuation = 0;
-        this.bid = 0; 
+        
     }
-    public Agent(double valuation, double bid){
+    public Agent(double valuation){
         this.valuation = valuation;
-        this.bid = bid;
+
     }
     public double getBid(){
         return bid;
@@ -27,9 +29,29 @@ public class Agent implements HasMenu{
     public void setBid(double bid){
         this.bid = bid;
     }
+    public double getProfit(){
+        return profit;
+    }
+    public boolean getKeepGoing(){
+        return keepGoing;
+    }
+
+    public void setProfit(double profit){
+        this.profit = profit;
+    }
+    public void setKeepGoing(boolean keepGoing){
+        this.keepGoing = keepGoing;
+        
+    }
+    public void setAdjusted(boolean adjusted){
+        this.adjusted = adjusted;
+    }
     public double calcBid(){
         System.out.printf("I bid: %.2f%n", getBid());
         return bid;
+    }
+    public void takeTurn(double recentSales0,double recentSales1,double recentSales2,double recentSales3,double recentSales4){
+       
     }
     public void start(){
         boolean keepGoing = true;
@@ -55,10 +77,10 @@ public class Agent implements HasMenu{
         return value;
     }
 
-    public static void main(String[] args) {
-        Agent a = new Agent(1, 2);
-        System.out.printf("Your bid was: %.2f%n", a.getBid());
-        a.start();
-    }
+    //public static void main(String[] args) {
+     //   Agent a = new Agent(1, 2);
+     //   System.out.printf("Your bid was: %.2f%n", a.getBid());
+    ///    a.start();
+    //}
 
 }
