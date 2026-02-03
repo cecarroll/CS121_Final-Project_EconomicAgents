@@ -1,7 +1,7 @@
 # Final-Project
 
 
-I am more or less out to create economic agents that will accurately negotiate a price in a marketplace. 
+I am creating economic agents that will accurately negotiate a price in a marketplace. 
 
 I had the idea to do an interface for menu like we did before. 
 
