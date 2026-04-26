@@ -1,6 +1,11 @@
-# Final-Project
+# Economic 2-Sided Bidding Agents ABM
+Welcome to the game. My name is Cole Carroll and I have an interest in the market process, methodology, and ABMs being used to illustrate. This project was a final for a freshman CS 2 class that I took during my master's programs. 
+
+In order to run, just run the "main" file however you run c++ files, and it will show a repeating sequence of bids that runs according to an algorithm. This algorithm was a piece among many of Austrian price theory that I did not get to the specificity Austrians would like, but the goal here was to generate a market from methodologically individual economic agents.
 
 
+
+# Notes
 I am creating economic agents that will accurately negotiate a price in a marketplace. 
 
 I had the idea to do an interface for menu like we did before. 
